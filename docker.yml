@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-    - name: stop container
+    - name: stop running container
       shell:  docker container stop dockeransible                    #name of container 
     - name: remove container
       shell: docker container rm dockeransible
